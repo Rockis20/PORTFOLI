@@ -9,7 +9,7 @@ box-sizing: border-box;
     --font-secundària: "Raleway", sans-serif;
 
     --pes-font: 300;
-    --pes-negreta: 900; 
+    --pes-negreta: 800; 
 
     --colorClar: #00dffd; 
     --colorFosc: #58d68d;
@@ -24,7 +24,7 @@ box-sizing: border-box;
 
 @media (min-width: 800px) {
     :root {
-        --tamany-h1: 4.5rem;
+        --tamany-h1: 4.5em;
         --tamany-h2: 2.75rem;
         --tamany-h3: 1.5rem;
         --tamany-body: 1.125rem;
@@ -49,7 +49,7 @@ body {
 }
 
 section {
-    padding: 2em 2em;
+    padding: 5em 2em;
 }
 img {
     display: block;
@@ -59,7 +59,7 @@ img {
 h1,
 h2,
 h3 {
-    line-height: 1.1;
+    line-height: 1;
     margin: 0;
 }
 
@@ -87,10 +87,12 @@ h3 {
     font-size: var(--tamany-h3);
 }
 
-.subtitol {
+.subtitol-intro,
+.subtitol-about {
     background: var(--colorResaltar);
-    font-family: var(--color --font-secundària);
+    font-family: var(--color--font-secundària);
     margin-bottom: 1em;
+    padding: .25em 1em;
 }
 
 .titol-intro strong {
@@ -116,7 +118,7 @@ h3 {
 
 .intro-img {
     grid-area: img;
-    min-width: 200px;
+    min-width: 250px;
     position: relative;
     z-index: 2;
 }   
@@ -134,12 +136,12 @@ h3 {
     box-shadow: var(--sombra);
 }
 
-.subtitol {
+.subtitol-intro {
     display: inline-block;
 }
 
 .meusServeis {
-    background-color: var(--color);
+    background-color: var(--colorF);
     color: var(--colorClar);
     text-align: center;
     background-image: url(../img/https___hypebeast.com_image_2020_01_2015-lamborghini-veneno-roadster-rm-sothebys-auction-info-01.webp);
@@ -152,7 +154,11 @@ h3 {
     position: relative;
 }
 
-@media (min-width: 800px) {
+.serveis{
+    margin-bottom: 4em;
+}
+
+@media (min-width: 600px) {
     .serveis{
         display: flex;
         margin-left: auto;
@@ -163,9 +169,37 @@ h3 {
     .servei + .servei {
         margin: 2em;
     }
-    
     .servei{
         max-width: 500px;
         margin: 0 auto;
     }
+}
+
+@media ( min-width: 600px) {
+    .sobrejo{
+        display: grid;
+        margin: 0 auto;
+        width: min-content;
+        grid-column-gap: 1em;
+        grid-template-areas: 
+        "titol img"
+        "subtitol img";
+        grid-template-columns: min-content max-content;
+    }
+}
+.sobrejo-img {
+    grid-area: img;
+    min-width: 250px;
+    max-width: 400px;
+    position: relative;
+    z-index: 2;
+}   
+
+.subtitol-sobrejo {
+    align-self: start;
+    grid-column: -1/ 1.5;
+    grid-row: 2;
+    text-align: left;
+    position: relative;
+    width: calc(100%+1.5em)   ;
 }
