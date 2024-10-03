@@ -239,3 +239,23 @@ h3 {
     text-align: center;
 
 }
+
+
+.portfoli{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.porfoli-obj{
+    background: var(--colorResaltar);
+    overflow: hidden;
+}
+
+.portfoli-img{
+    transition: transform 750ms cubic-bezier(.5, 0, .5, 1), opacity 250ms linear;
+}
+
+.portfoli-img:hover{
+    transform: scale(1.2);
+    opacity: .5;
+}
