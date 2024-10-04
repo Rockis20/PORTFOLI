@@ -90,7 +90,7 @@ h3 {
 }
 
 .subtitol-intro,
-.subtitol-about {
+.subtitol-sobrejo {
     background: var(--colorResaltar);
     font-family: var(--color--font-secundària);
     margin-bottom: 1em;
@@ -146,7 +146,7 @@ h3 {
     background-color: var(--colorF);
     color: var(--colorClar);
     text-align: center;
-    background-image: url(../img/https___hypebeast.com_image_2020_01_2015-lamborghini-veneno-roadster-rm-sothebys-auction-info-01.webp);
+    background-image: url(../img/1366_2000.jpeg);
     background-size: cover;
     background-blend-mode: multiply;
 }
@@ -181,16 +181,11 @@ h3 {
 .sobrejo {
     max-width: 1000px;
     margin: 0 auto;
+    position: relative;
 }
 
-
-.sobrejo {
-    max-width: 1000px;
-    margin: 0 auto;
-}
 
 .sobrejo-img {
-    grid-area: img;
     box-shadow:var(--sombra);
 }
 
@@ -198,7 +193,7 @@ h3 {
 @media (min-width: 600px) {
     .sobrejo {
         display: grid;
-        grid-template-columns: 1fr 200px;
+        grid-template-columns: 1fr 300px;
         grid-template-areas:
             "title img"
             "subtitol img"
@@ -207,16 +202,18 @@ h3 {
     }
 
     .titol-about {
-        grid-area: titol;
+        grid-area: title;
     }
 
     .subtitol-sobrejo {
+        grid-area: subtitol;
         grid-column: 1/-1;
         grid-row: 2;
         position: relative;
         left: -1em;
-        width: calc(100% + 2em);
-        grid-area: subtitle;
+        width: calc(100% + 50px);
+        margin: auto 0;
+        text-align: left;
     }
 
     .sobrejo-img {
@@ -243,7 +240,7 @@ h3 {
 
 .portfoli{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
 
 .porfoli-obj{
@@ -256,6 +253,6 @@ h3 {
 }
 
 .portfoli-img:hover{
-    transform: scale(1.2);
+    transform: scale(1);
     opacity: .5;
 }
