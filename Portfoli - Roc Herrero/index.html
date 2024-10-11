@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="./css/js/script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/e2c8450d0e.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roc Herrero</title>
@@ -14,15 +16,16 @@
         <div class="logo">
             <img src="./img/rh-high-resolution-logo-black-transparent.png">
         </div>
-        <button>
-            <span>HOLA</span>
+        <button id="hola"  class="desplegable">
+
+            <span class="hamburger"></span>
         </button>
-        <nav class="menu">
+        <nav  id="r" class="menu">
             <ul class="menu-lista">
-                <li class="menu-item"><a href="#Intro" class="menu-link">Roc Herrero</a></li>
-                <li class="menu-item"><a href="#Serveis" class="menu-link">Serveis</a></li>
-                <li class="menu-item"><a href="#About" class="menu-link">Sobre jo</a></li>
-                <li class="menu-item"><a href="#My works" class="menu-link">Els meus Treballs</a></li>
+                <li class="menu-item"><a href="#Intro" class="menu-link" id="b1">Roc Herrero</a></li>
+                <li class="menu-item"><a href="#Serveis" class="menu-link" id="b2">Serveis</a></li>
+                <li class="menu-item"><a href="#About" class="menu-link" id="b3">Sobre jo</a></li>
+                <li class="menu-item"><a href="#My works" class="menu-link" id="b4">Els meus Treballs</a></li>
             </ul>
         </nav>
     </header>
@@ -32,22 +35,22 @@
         <img src="img/IMG-20240804-WA0004.jpg" class="intro-img">
     </section>
     <section id="Serveis" class="meusServeis">
-        <h2 class="titol titol-serveis">Els Meus Serveis</h2>
+        <h2 class="titol titol-serveis">Els Meus Serveis</h2>                                                                                                                                                                                                                                           
         <div class="serveis">
 
          <div class="servei">
             <h3><strong>Professor de Pàdel</strong></h3>
-                <p>Professor de pàdel jugadors d'entre 16-35 anys.</p> 
+                <p>Professor de pàdel jugadors d'entre 16-35 anys a la Nadal Academy a Mallorca. </p> 
             <img src="" alt="">
          </div>
             <div class="servei">
                 <h3><strong>Reparador de telèfons mòbils</strong></h3>
-                <p>Reparador d'!Phones.</p>
+                <p>Reparador de dispositius mòbils de la millor manera.</p>
                 <img src="" alt="">
             </div>
             <div class="servei">
                 <h3><strong>Professor de Repàs de Biologia UIB</strong></h3>
-                <p>Classes personalitzades per a alumnes amb dificultats en Biologia.</p>
+                <p>Classes personalitzades per a alumnes amb dificultats en Biologia de totes les edats.</p>
                 <img src="" alt="">
             </div>
         </div>
@@ -55,16 +58,16 @@
     </section>
     <section id="About" class="sobrejo">
         <h2 class="titol titol-about"><strong>Sobre Jo</strong></h2>
-        <p class="subtitol subtitol-sobrejo">Vaig nèixer a BNC el dia 19 de Maig de 2007.</p>
+        <p class="subtitol subtitol-sobrejo">Curiositats:</p>
         <div>
-            <p>asfasdfsdfdsf</p>
-            <p>dsfsdfsdfds</p>
+            <p>- Vaig nèixer a BNC el dia 19 de Maig de 2007.</p>
+            <p>- M'agrada jugar a pàdel i estic fent 2n de Batxillerat científic.</p>
         </div>
         <img src="img/IMG-20230429-WA0007.jpg" class="sobrejo-img">
     </section>
     <section id="My works" class="treballs">
-        <h2 class="titol"><strong>Treballs</strong></h2>
-        <p class=" subtitol subtitol-about subtitol-treballs">Els meus treballs i les seves corresponents webs. </p>
+        <h2 class="titol titol-about"><strong>Treballs</strong></h2>
+        <p class=" subtitol subtitol-about subtitol-treballs"></p>
      <div class="portfoli">
             <a href="https://premierpadel.com/en" class="portfoli-obj">
             <img src="img/Noves imatges/sp-ciurcuito-premier-padel (1).png" alt="" class="portfoli-img">
@@ -98,10 +101,32 @@
     <footer class="footer">
         <a href="mailto:rherrero20056@iesjoanramis.org" class="link">rherrero20056@iesjoanramis.org</a>
         <ul class="lista">
-            <li class="item-list"><a href="https://www.twitch.tv/rocki0" class="link-list">1. Twitch </a></li>
-            <li class="item-list"><a href="https://classroom.google.com/" class="link-list">2. Classroom</a></li>
-            <li class="item-list"><a href="https://github.com/Rockis20" class="link-list">3. Github</a></li>
+            <li class="item-list"><a href="https://www.twitch.tv/rocki0" class="link-list" style="font-size: 50px;"><i class="fa-brands fa-twitch"></i></a></li>
+            <li class="item-list"><a href="https://classroom.google.com/" class="link-list" style="font-size: 50px;"><i class="fa-brands fa-google-scholar"></i></i></a></li>
+            <li class="item-list"><a href="https://github.com/Rockis20" class="link-list" style="font-size: 50px;"><i class="fa-brands fa-square-github"></i></a></li>
         </ul>
     </footer>
 </body>
+
+<script>
+    document.getElementById("hola").addEventListener("click", function (){
+        document.getElementById("r").classList.add("roc")})
+    
+    document.getElementById("b1").addEventListener("click", function (){
+            document.getElementById("r").classList.remove("roc")})
+
+    document.getElementById("b2").addEventListener("click", function (){
+                document.getElementById("r").classList.remove("roc")})
+
+    document.getElementById("b2").addEventListener("click", function (){
+                    document.getElementById("r").classList.remove("roc")})
+
+    document.getElementById("b3").addEventListener("click", function (){
+                        document.getElementById("r").classList.remove("roc")})
+
+    document.getElementById("b4").addEventListener("click", function (){
+                            document.getElementById("r").classList.remove("roc")})
+
+    
+</script>
 </html>
